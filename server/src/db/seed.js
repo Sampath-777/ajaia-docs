@@ -1,5 +1,8 @@
 const bcrypt = require("bcryptjs");
 const db = require("./database");
+const initializeDatabase = require("./schema");
+
+initializeDatabase();
 
 const users = [
   {
